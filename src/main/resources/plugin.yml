@@ -1,0 +1,20 @@
+name: TransitCard
+version: '${project.version}'
+main: me.andrej123456789.transitcard.TransitCard
+api-version: '1.19'
+commands:
+  transit_card:
+      description: "Show information about TransitCard plugin"
+      usage: "/transit_card"
+
+  metro_card:
+      description: "Buy metro card"
+      usage: "/metro_card [hours]"
+      permission: transit_card.buy.metro
+      permission-message: "&c[TransitCard] You don't have permission to use this command!"
+
+  monorail_card:
+    description: "Buy monorail card"
+    usage: "/metro_card [hours]"
+    permission: transit_card.buy.monorail
+    permission-message: "&c[TransitCard] You don't have permission to use this command!"

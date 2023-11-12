@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="TransitCard:jar">
+    <output-path>$USER_HOME$/Documents/Minecraft/City/Paper/plugins</output-path>
+    <root id="archive" name="TransitCard.jar">
+      <element id="module-output" name="TransitCard" />
+    </root>
+  </artifact>
+</component>

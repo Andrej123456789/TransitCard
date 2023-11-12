@@ -21,7 +21,7 @@ public class Help implements CommandExecutor, TabExecutor {
 
     @Override
     public boolean onCommand(@NotNull CommandSender sender, @NotNull Command command, @NotNull String label, @NotNull String[] args) {
-        sender.sendMessage("GitHub: " + ChatColor.AQUA + "\n" + ChatColor.RESET);
+        sender.sendMessage("GitHub: " + ChatColor.AQUA + "https://github.com/Andrej123456789/TransitCard\n" + ChatColor.RESET);
 
         sender.sendMessage("/metro_card [hours] - buy metro card (if hours argument is not passed, card is valid for 1 hour)");
         sender.sendMessage("/monorail_card [hours] - buy monorail card");

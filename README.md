@@ -4,6 +4,8 @@ Paper plugin for transit cards in Minecraft
 
 Version: 1.19.4+
 
+Dependencies: [Vault](https://www.spigotmc.org/resources/vault.34315/)
+
 ## How to use
 - Run /metro_card or any similar command
 
@@ -37,4 +39,4 @@ monorail_card_price: 1
 
 [Full video tutorial (you won't need everything)](https://www.youtube.com/watch?v=5DBJcz0ceaw)
 
-*You can also just download `exec-signs.jar` file*
+*You can also just download `TransitCard.jar` file*

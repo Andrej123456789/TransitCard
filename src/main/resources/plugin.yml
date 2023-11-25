@@ -15,6 +15,18 @@ commands:
 
   monorail_card:
     description: "Buy monorail card"
-    usage: "/metro_card [hours]"
+    usage: "/monorail_card [hours]"
     permission: transit_card.buy.monorail
+    permission-message: "&c[TransitCard] You don't have permission to use this command!"
+
+  bus_card:
+    description: "Buy bus card"
+    usage: "/bus_card [hours]"
+    permission: transit_card.buy.bus
+    permission-message: "&c[TransitCard] You don't have permission to use this command!"
+
+  tram_card:
+    description: "Buy tram card"
+    usage: "/tram_card [hours]"
+    permission: transit_card.buy.tram
     permission-message: "&c[TransitCard] You don't have permission to use this command!"

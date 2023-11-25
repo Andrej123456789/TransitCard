@@ -1,8 +1,6 @@
 package me.andrej123456789.transitcard;
 
-import me.andrej123456789.transitcard.commands.BuyMetro;
-import me.andrej123456789.transitcard.commands.BuyMonorail;
-import me.andrej123456789.transitcard.commands.Help;
+import me.andrej123456789.transitcard.commands.*;
 
 import org.bukkit.ChatColor;
 import org.bukkit.plugin.java.JavaPlugin;
@@ -31,6 +29,8 @@ public final class TransitCard extends JavaPlugin {
 
         getCommand("metro_card").setExecutor(new BuyMetro());
         getCommand("monorail_card").setExecutor(new BuyMonorail());
+        getCommand("bus_card").setExecutor(new BuyBus());
+        getCommand("tram_card").setExecutor(new BuyTram());
 
         getLogger().info("Initialization of TransitCard is done!");
         getServer().getConsoleSender().sendMessage("[TransitCard] If you like this plugin, give it a star on Github: "

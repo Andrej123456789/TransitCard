@@ -1,4 +1,4 @@
-# Do you want to give piece of paper to players
+# Do you want to not give piece of paper to players
 electronic_card: true
 
 # Price of metro card
@@ -6,3 +6,9 @@ metro_card_price: 1
 
 # Price of monorail card
 monorail_card_price: 1
+
+# Price of bus card
+bus_card_price: 0.5
+
+# Price of tram card
+tram_card_price: 0.5

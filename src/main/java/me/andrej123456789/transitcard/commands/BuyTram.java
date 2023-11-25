@@ -22,7 +22,7 @@ import java.util.List;
 
 import static me.andrej123456789.transitcard.TransitCard.getEconomy;
 
-public class BuyMonorail implements CommandExecutor, TabExecutor {
+public class BuyTram implements CommandExecutor, TabExecutor {
 
     private static final Plugin plugin = JavaPlugin.getProvidingPlugin(TransitCard.class);
 
@@ -50,12 +50,12 @@ public class BuyMonorail implements CommandExecutor, TabExecutor {
         }
 
         Double balance = getEconomy().getBalance((OfflinePlayer) sender);
-        getEconomy().withdrawPlayer((OfflinePlayer) sender, plugin.getConfig().getDouble("monorail_card_price") * hours);
+        getEconomy().withdrawPlayer((OfflinePlayer) sender, plugin.getConfig().getDouble("tram_card_price") * hours);
 
         ItemStack minecart = new ItemStack(Material.MINECART);
         ItemMeta minecart_meta = minecart.getItemMeta();
 
-        minecart_meta.setDisplayName("Monorail Minecart (" + Integer.toString(hours) + "h)");
+        minecart_meta.setDisplayName("Tram Minecart (" + Integer.toString(hours) + "h)");
         minecart.setItemMeta(minecart_meta);
 
         ((Player) sender).getInventory().addItem(minecart);
@@ -66,13 +66,13 @@ public class BuyMonorail implements CommandExecutor, TabExecutor {
             ItemStack paper_card = new ItemStack(Material.PAPER);
             ItemMeta paper_card_meta = paper_card.getItemMeta();
 
-            paper_card_meta.setDisplayName("Monorail card (" + Integer.toString(hours) + "h)");
+            paper_card_meta.setDisplayName("Tram card (" + Integer.toString(hours) + "h)");
             paper_card.setItemMeta(paper_card_meta);
 
             ((Player) sender).getInventory().addItem(paper_card);
         }
 
-        sender.sendMessage(ChatColor.GREEN + "You have received your monorail card for " + Integer.toString(hours) + "h" + ChatColor.RESET);
+        sender.sendMessage(ChatColor.GREEN + "You have received your tram card for " + Integer.toString(hours) + "h" + ChatColor.RESET);
         return true;
     }
 

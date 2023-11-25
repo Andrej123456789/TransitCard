@@ -1,0 +1,10 @@
+# Do you want to not give piece of paper to players
+electronic_card = true
+
+[prices]
+    bus = 0.5
+    cable_car = 1.5
+    ferry = 2.0
+    metro = 1.0
+    monorail = 1.0
+    tram = 1.0

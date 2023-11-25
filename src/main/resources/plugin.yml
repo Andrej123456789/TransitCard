@@ -2,31 +2,17 @@ name: TransitCard
 version: '${project.version}'
 main: me.andrej123456789.transitcard.TransitCard
 api-version: '1.19'
+
+libraries:
+  - com.moandjiezana.toml:toml4j:0.7.2
+
 commands:
   transit_card:
     description: "Show information about TransitCard plugin"
     usage: "/transit_card"
 
-  metro_card:
-    description: "Buy metro card"
-    usage: "/metro_card [hours]"
-    permission: transit_card.buy.metro
-    permission-message: "&c[TransitCard] You don't have permission to use this command!"
-
-  monorail_card:
-    description: "Buy monorail card"
-    usage: "/monorail_card [hours]"
-    permission: transit_card.buy.monorail
-    permission-message: "&c[TransitCard] You don't have permission to use this command!"
-
-  bus_card:
-    description: "Buy bus card"
-    usage: "/bus_card [hours]"
-    permission: transit_card.buy.bus
-    permission-message: "&c[TransitCard] You don't have permission to use this command!"
-
-  tram_card:
-    description: "Buy tram card"
-    usage: "/tram_card [hours]"
-    permission: transit_card.buy.tram
+  buy_card:
+    description: "Buy transit card for [transit X]"
+    usage: "/buy_card (transit) [hours]"
+    permission: transit_card.buy
     permission-message: "&c[TransitCard] You don't have permission to use this command!"

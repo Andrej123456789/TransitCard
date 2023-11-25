@@ -1,14 +1,1 @@
-# Do you want to not give piece of paper to players
-electronic_card: true
-
-# Price of metro card
-metro_card_price: 1
-
-# Price of monorail card
-monorail_card_price: 1
-
-# Price of bus card
-bus_card_price: 0.5
-
-# Price of tram card
-tram_card_price: 0.5
+github: "https://github.com/Andrej123456789/TransitCard"

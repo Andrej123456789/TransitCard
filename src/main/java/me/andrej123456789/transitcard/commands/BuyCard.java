@@ -96,7 +96,7 @@ public class BuyCard implements CommandExecutor, TabExecutor {
             return true;
         }
 
-        Integer hours = Integer.valueOf(removeLetterH(args[1]));
+        Integer hours = 0;
 
         if (args.length < 1) {
             return false;
@@ -104,6 +104,10 @@ public class BuyCard implements CommandExecutor, TabExecutor {
 
         if (args.length == 1) {
             hours = 1;
+        }
+
+        if (args.length > 1) {
+            hours = Integer.valueOf(removeLetterH(args[1]));
         }
 
         Toml toml;

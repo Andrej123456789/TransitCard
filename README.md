@@ -12,6 +12,8 @@ Dependencies: [Vault](https://www.spigotmc.org/resources/vault.34315/)
 ### Permissions
 - `transit_card.buy.metro`
 - `transit_card.buy.monorail`
+- `transit_card.buy.bus`
+- `transit_card.buy.tram`
 
 Or simply: `transit_card.buy.transit`
 
@@ -31,6 +33,12 @@ metro_card_price: 1
 
 # Price of monorail card
 monorail_card_price: 1
+
+# Price of bus card
+bus_card_price: 1
+
+# Price of tram card
+tram_card_price: 1
 ```
 
 ## How to compile

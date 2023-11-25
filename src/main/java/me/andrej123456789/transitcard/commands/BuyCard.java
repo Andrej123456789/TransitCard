@@ -96,8 +96,14 @@ public class BuyCard implements CommandExecutor, TabExecutor {
             return true;
         }
 
-        if (args.length < 2) {
+        Integer hours = Integer.valueOf(removeLetterH(args[1]));
+
+        if (args.length < 1) {
             return false;
+        }
+
+        if (args.length == 1) {
+            hours = 1;
         }
 
         Toml toml;
@@ -116,7 +122,6 @@ public class BuyCard implements CommandExecutor, TabExecutor {
         }
 
         String transit = args[0];
-        Integer hours = Integer.valueOf(removeLetterH(args[1]));
 
         if (!sender.hasPermission("transit_card.buy." + transit)) {
             sender.sendMessage(ChatColor.RED + "You don't have permission to buy this transit card!" + ChatColor.RESET);

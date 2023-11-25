@@ -26,6 +26,12 @@ public class BuyMetro implements CommandExecutor, TabExecutor {
 
     private static final Plugin plugin = JavaPlugin.getProvidingPlugin(TransitCard.class);
 
+    public static String removeLetterH(String input) {
+        // Use regular expression to replace all occurrences of 'h' (case-insensitive)
+        String result = input.replaceAll("(?i)h", "");
+        return result;
+    }
+
     @Override
     public boolean onCommand(@NotNull CommandSender sender, @NotNull Command command, @NotNull String label, @NotNull String[] args) {
 
@@ -36,6 +42,8 @@ public class BuyMetro implements CommandExecutor, TabExecutor {
         }
 
         int hours = 0;
+
+        args[0] = removeLetterH(args[0]);
 
         if (args.length == 0)
         {

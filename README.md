@@ -10,35 +10,24 @@ Dependencies: [Vault](https://www.spigotmc.org/resources/vault.34315/)
 - Run /metro_card or any similar command
 
 ### Permissions
-- `transit_card.buy.metro`
-- `transit_card.buy.monorail`
-- `transit_card.buy.bus`
-- `transit_card.buy.tram`
-
-Or simply: `transit_card.buy.transit`
-
-### Placeholders:
-- none at this moment
+- `transit_card.buy` - for accessing `/buy_card` command
+- `transit_card.buy.[transit]` - for buying `[transit X]` (replace `[transit]` with proper transit type)
 
 ### Config
 
-Just read comments
+Self explanatory
 
-```yml
-# Do you want to give piece of paper to players
-electronic_card: true
+```toml
+# Do you want to not give piece of paper to players
+electronic_card = true
 
-# Price of metro card
-metro_card_price: 1
-
-# Price of monorail card
-monorail_card_price: 1
-
-# Price of bus card
-bus_card_price: 1
-
-# Price of tram card
-tram_card_price: 1
+[prices]
+    bus = 0.5
+    cable_car = 1.5
+    ferry = 2.0
+    metro = 1.0
+    monorail = 1.0
+    tram = 1.0
 ```
 
 ## How to compile

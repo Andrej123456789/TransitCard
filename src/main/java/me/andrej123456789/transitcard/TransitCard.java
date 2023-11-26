@@ -39,7 +39,7 @@ public final class TransitCard extends JavaPlugin {
 
         getLogger().info("Initialization of TransitCard is done!");
         getServer().getConsoleSender().sendMessage("[TransitCard] If you like this plugin, give it a star on Github: "
-                + ChatColor.AQUA + getConfig().getString("github") + ChatColor.RESET);
+                + ChatColor.AQUA + "https://github.com/Andrej123456789/TransitCard" + ChatColor.RESET);
     }
 
     @Override

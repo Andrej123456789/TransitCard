@@ -129,6 +129,7 @@ public class BuyCard implements CommandExecutor, TabExecutor {
 
         if (!sender.hasPermission("transit_card.buy." + transit)) {
             sender.sendMessage(ChatColor.RED + "You don't have permission to buy this transit card!" + ChatColor.RESET);
+            return true;
         }
 
         /* Give minecart to player */
@@ -144,7 +145,7 @@ public class BuyCard implements CommandExecutor, TabExecutor {
         ((Player) sender).getInventory().addItem(minecart);
 
         // Use paper cards too
-        if (!plugin.getConfig().getBoolean("electronic_card"))
+        if (!toml.getBoolean("electronic_card"))
         {
             ItemStack paper_card = new ItemStack(Material.PAPER);
             ItemMeta paper_card_meta = paper_card.getItemMeta();
@@ -153,6 +154,13 @@ public class BuyCard implements CommandExecutor, TabExecutor {
             paper_card.setItemMeta(paper_card_meta);
 
             ((Player) sender).getInventory().addItem(paper_card);
+        }
+
+        // Give spyglass to player
+        if (toml.getBoolean("give_spyglass"))
+        {
+            ItemStack spyglass = new ItemStack(Material.SPYGLASS);
+            ((Player) sender).getInventory().addItem(spyglass);
         }
 
         sender.sendMessage(ChatColor.GREEN + "You have received your " + capitalizeAndRemoveUnderscore(transit) + " card for " + Integer.toString(hours) + "h" + ChatColor.RESET);

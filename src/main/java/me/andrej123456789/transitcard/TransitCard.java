@@ -1,7 +1,6 @@
 package me.andrej123456789.transitcard;
 
-import me.andrej123456789.transitcard.commands.BuyCard;
-import me.andrej123456789.transitcard.commands.Help;
+import me.andrej123456789.transitcard.commands.BuyTransit;
 
 import org.bukkit.ChatColor;
 import org.bukkit.plugin.java.JavaPlugin;
@@ -34,8 +33,7 @@ public final class TransitCard extends JavaPlugin {
             return;
         }
 
-        getCommand("transit_card").setExecutor(new Help());
-        getCommand("buy_card").setExecutor(new BuyCard());
+        getCommand("buy_transit").setExecutor(new BuyTransit());
 
         getLogger().info("Initialization of TransitCard is done!");
         getServer().getConsoleSender().sendMessage("[TransitCard] If you like this plugin, give it a star on Github: "

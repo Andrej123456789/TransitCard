@@ -21,9 +21,6 @@ Self explanatory
 # Do you want to not give piece of paper to players
 electronic_card = true
 
-# Do you want to give players spyglass for easier signs reading
-give_spyglass = true
-
 [prices]
     bus = 0.5
     cable_car = 1.5

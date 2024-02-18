@@ -7,12 +7,8 @@ libraries:
   - com.moandjiezana.toml:toml4j:0.7.2
 
 commands:
-  transit_card:
-    description: "Show information about TransitCard plugin"
-    usage: "/transit_card"
-
-  buy_card:
+  buy_transit:
     description: "Buy transit card for [transit X]"
-    usage: "/buy_card (transit) [hours]"
+    usage: "/buy_transit (transit) [hours]"
     permission: transit_card.buy
     permission-message: "&c[TransitCard] You don't have permission to use this command!"

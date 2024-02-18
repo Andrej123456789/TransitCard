@@ -29,7 +29,7 @@ import java.util.Map;
 
 import static me.andrej123456789.transitcard.TransitCard.getEconomy;
 
-public class BuyCard implements CommandExecutor, TabExecutor {
+public class BuyTransit implements CommandExecutor, TabExecutor {
 
     private static final Plugin plugin = JavaPlugin.getProvidingPlugin(TransitCard.class);
 

@@ -6,7 +6,7 @@ Version: 1.19.4+
 
 Dependencies: [Vault](https://www.spigotmc.org/resources/vault.34315/)
 
-[v1.0.0](https://github.com/Andrej123456789/TransitCard/releases/tag/v1.0.0)
+[Latest release - v2.0.0](https://github.com/Andrej123456789/TransitCard/releases/tag/v2.0.0)
 
 ## How to use
 - Run /metro_card or any similar command
